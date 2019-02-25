@@ -1,0 +1,197 @@
+@media (min-width: 1420px) and (max-width: 1600px) {
+  .swiper-slide {
+    margin: auto 5px auto !important;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 950px) {
+
+  .quote-wrapper {
+    margin-left: 6%;
+  }
+
+  .section4 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .faq-item-1-2-3,
+  .faq-item-1-2-3.expanded,
+  .faq-item-4-5-6,
+  .faq-item-4-5-6.expanded {
+    width: inherit;
+    align-items: flex-start;
+    margin: 0 0 0 35px;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5,
+  .section6,
+  .section7 {
+    padding: 20% auto;
+  }
+
+  #top-page {
+    font-size: 1.5em;
+    float: none;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .section1-container {
+    overflow: visible;
+  }
+
+  .form-container {
+    float: none;
+  }
+
+  form {
+    margin: 0 auto;
+  }
+
+  .video {
+    float: none;
+    text-align: center;
+  }
+
+  .video a {
+    text-align: center;
+  }
+
+  .section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .quote-wrapper {
+    text-align: center;
+  }
+
+  .section3-container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .box-text {
+    width: 70%;
+  }
+
+  .carousel-element:first-of-type {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .press-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    align-items: center;
+  }
+
+  .box-text {
+    text-align: center;
+    width: 70%;
+  }
+
+  .footer1 {
+    height: 80px;
+  }
+
+  }
+
+@media screen and (max-width: 640px) {
+
+  .section1-container {
+    min-height: 900px;
+  }
+
+  .quote-wrapper {
+    font-size: 1.3em;
+  }
+
+  .box-text {
+    width: 100%;
+  }
+
+  .external {
+    margin-left: 0;
+  }
+
+  .footer1 {
+    height: 130px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .nav-links {
+    flex-direction: row;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+
+  .nav-element {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    line-height: 50px;
+  }
+
+  .section1-container {
+    background-image: url(../images/mars-background-2000.jpg);
+  }
+
+  form {
+    margin-left: 0;
+  }
+
+  .social,
+  .external {
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.8em;
+  }
+
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Кофе в постель</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="images/coffee-icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=cyrillic">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src='js/script.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>Кофе в постель</h1>
+    </header>
+
+    <div class="main">
+        <h2>Закажите кофе в постель</h2>
+        <form action="process.html" method="post" id="enquiry">
+            <div class="customer">
+                <h3>Кому и куда?</h3>
+                <input id="name" name="name" type="text" placeholder="Имя" value aria-label="Имя" />
+                <input id="phone" name="phone" type="tel" placeholder="Телефон" value aria-label="Телефон" class="required" />
+                <input id="address" name="address" type="text" placeholder="Улица, номер дома, номер квартиры" value aria-label="Адрес" class="required" />
+            </div>
+
+            <div class="form-line desserts">
+                <h3>Что-то ещё?</h3>
+                <div id="dessert" class="dessert" value="" data-price="">Нет, спасибо</div>
+                <ul class="popup">
+                    <li value="Круассан" data-price="30">Круассан</li>
+                    <li value="Тирамису" data-price="50">Тирамису</li>
+                    <li value="Чизкейк" data-price="50">Чизкейк</li>
+                    <li value="Куки" data-price="20">Куки</li>
+                    <li value="Вафли" data-price="20">Вафли</li>
+                    <li value="Блинчик" data-price="25">Блинчик</li>
+                    <li value="Шоколадный пирог" data-price="60">Шоколадный пирог</li>
+                    <div class="arrow"></div>
+                </ul>
+
+                <div class="row-inputs">
+                    <label><input type="checkbox" id="paper" value="Газетку" data-price="3">
+                        <i></i>Газетку</label>
+                    <label><input type="checkbox" id="napkins" value="Салфетки" data-price="3">
+                        <i></i>Салфетки</label>
+                </div>
+                <img src="images/cookies.png" alt="Печенье" />
+            </div>
+
+            <div class="form-line coffee">
+                <h3>Какой кофе?</h3>
+                <div id="coffee" class="coffee required" value="" data-price="">Американо</div>
+                <ul class="popup">
+                    <li value="Американо" data-price="90">Американо</li>
+                    <li value="Капучино" data-price="110">Капучино</li>
+                    <li value="Эспрессо" data-price="80">Эспрессо</li>
+                    <li value="Латте" data-price="100">Латте</li>
+                    <li value="Глясе" data-price="100">Глясе</li>
+                    <li value="Ристретто" data-price="120">Ристретто</li>
+                    <li value="Просто кофе" data-price="70">Просто кофе</li>
+                    <div class="arrow"></div>
+                </ul>
+
+                <div class="row-inputs">
+                    <label><input type="checkbox" id="sugar" value="Сахар" data-price="3">
+                        <i></i>Сахар</label>
+                    <label class="cream"><input type="checkbox" id="cream" value="Сливки" data-price="3">
+                        <i></i>Сливки</label>
+                    <label class="milk"><input type="checkbox" id="milk" value="Молоко" data-price="3">
+                        <i></i>Молоко</label>
+                </div>
+                <img src="images/cup.png" alt="Чашка" />
+            </div>
+
+            <div>
+                <h3>Сумма заказа:<span id="sum"> 0 руб.</span></h3>
+            </div>
+
+            <div class="comment">
+                <textarea class="comment" name="comment" placeholder="Ваше сообщение" aria-label="Ваше сообщение"></textarea>
+            </div>
+
+            <div class="buttons">
+                <button id="submit" type="submit" value="submit">Отправить</button>
+                <button id="reset" type="reset" value="reset">Сбросить</button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>ООО «Кофе в постель», 2018–2019</p>
+        <p>Тел. +7(950) 691-93-72</p>
+        <p>Адрес: Сосновый бор, ул. Сосновая, д. 9</p>
+    </footer>
+
+</body>
+
+</html>

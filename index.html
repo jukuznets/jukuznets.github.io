@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Юлия Кузнецова</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="header-line wrapper">
+            <div class="header-logo">
+                <img src="images/logo.png" />
+                <div class="header-name">Юлия Кузнецова<span>HTML-верстальщик</span></div>
+            </div>
+            <div class="mobile-menu">
+                <div class="icon-wrapper">
+                    <a class="mobile-menu-icon"><span></span></a>
+                </div>
+                <ul class="mobile-nav">
+                    <li><a href="#portfolio" class="header-nav-item">Портфолио</a></li>
+                    <li><a href="#resume" class="header-nav-item">Резюме</a></li>
+                    <li><a href="#contacts" class="header-nav-item">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="desktop-menu">
+                <ul class="header-nav">
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#resume">Резюме</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1 class="header-text wrapper">Адаптивная верстка сайтов <span>под мобильные и&nbsp;широкоэкранные устройства</span></h1>
+    </div>
+
+    <div class="portfolio wrapper-section">
+        <div class="wrapper">
+            <h2 id="portfolio">Примеры работ</h2>
+            <p>(Кликните по превью, чтобы открыть страницу в новой вкладке)</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="portfolio/tabs/menu.html" target="_blank"><img src="portfolio/images/tabs.png" alt="" /></a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="portfolio/form/form.html" target="_blank"><img src="portfolio/images/form.png" alt="" /></a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="portfolio/landing/index.html" target="_blank"><img src="portfolio/images/landing.png" alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills wrapper-section">
+        <div class="wrapper">
+            <h2 id="resume">Навыки</h2>
+            <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>jQuery</span>
+                <span>Bootstrap</span>
+                <span>Photoshop</span>
+                <span>Git</span>
+            </div>
+            <button class="get-cv"><a href="https://drive.google.com/open?id=18iRFfzK0tzqmpADDEg0OxtNctvTAEa1B" target="_blank">Скачать резюме</a></button>
+        </div>
+        <div id="contacts"></div>
+    </div>
+
+    <div class="contacts wrapper-section">
+        <div class="wrapper">
+            <h2>Для связи</h2>
+
+            <form id="email-form" action="https://formspree.io/jukuznetswork@gmail.com" method="POST">
+                <div class="inputs">
+                    <input id="name" type="text" name="name" placeholder="Имя" />
+                    <input id="email" type="email" name="_replyto" placeholder="Email" />
+                </div>
+                <textarea id="comment" name="comment" placeholder="Сообщение"></textarea>
+                <button class="submit" value="Send">Отправить</button>
+            </form>
+
+            <img class="contacts-photo" src="images/kuznetsova.png" />
+        </div>
+    </div>
+
+    <a href="#header" class="up-button"></a>
+</body>
+
+<footer class="wrapper-section">
+    <div class="wrapper">
+        <a href="https://github.com/jukuznets" target="_blank"><img src="images/github.png" /></a>
+        <a href="https://codepen.io/jukuznets/" target="_blank"><img src="images/codepen.png" /></a>
+        <p>jukuznetswork@gmail.com</p>
+    </div>
+</footer>
+
+</html>
