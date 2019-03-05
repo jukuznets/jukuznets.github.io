@@ -56,9 +56,9 @@ button {
   text-transform: uppercase;
 
   &:hover {
-    background: $bgr-color-dark;
+    box-shadow: inset 0 60px 0 $bgr-color-dark;
     color: $font-color-light;
-    transition: background .2s linear, color .1s linear;
+    transition: .4s ease-out;
   }
 
   a {
@@ -225,23 +225,27 @@ button {
   }
 }
 
-.mobile-menu_shown .mobile-menu-icon span {
-  background: transparent;
-}
+.mobile-menu_shown {
+  .mobile-menu-icon {
+    span {
+      background: transparent;
+    }
 
-.mobile-menu_shown .mobile-menu-icon:before {
-  top: 50%;
-  transform: rotate(45deg);
-}
+    &:before {
+      top: 50%;
+      transform: rotate(45deg);
+    }
 
-.mobile-menu_shown .mobile-menu-icon:after {
-  bottom: 50%;
-  transform: rotate(-45deg);
-}
+    &:after {
+      bottom: 50%;
+      transform: rotate(-45deg);
+    }
+  }
 
-.mobile-menu_shown .mobile-nav {
-  visibility: visible;
-  opacity: 1;
+  .mobile-nav {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 // Portfolio
@@ -279,13 +283,29 @@ button {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
 
-.skills-list span {
-  background-color: $bgr-color-light;
-  padding: 8px 25px;
-  border-radius: 15px;
-  margin: 15px 8px;
+  span {
+    background-color: $bgr-color-light;
+    padding: 8px 25px;
+    border-radius: 15px;
+    margin: 15px 8px;
+    position: relative;
+
+    &:before, &:after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: calc(50% - 5px);
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #A4A4A4;
+      box-shadow: inset 0 -2px 0 $bgr-color-dark;
+    }
+
+    &:before {left: 7px;}
+    &:after {right: 7px;}
+  }
 }
 
 .get-cv {
