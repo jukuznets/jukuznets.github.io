@@ -6,7 +6,7 @@ $(document).ready(function() {
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,
-        speed: 700,
+        speed: 500,
         slidesPerView: 1,
         centeredSlides: true,
 
