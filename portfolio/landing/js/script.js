@@ -18,10 +18,7 @@ $(function() {
     });
 
     // развернуть ответы в FAQ
-    $('.faq-item .question a').click(function() {
-        $('.answer').slideUp(400);
-        $('.faq-item').removeClass('expanded');
-
+    $('.faq-item .question a').on('click', function() {
         $(this).closest('.faq-item').toggleClass('expanded');
         $(this).closest('.faq-item').find('.answer').slideToggle(400);
     });
