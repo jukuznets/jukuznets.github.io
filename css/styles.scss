@@ -110,22 +110,43 @@ button {
     }
   }
 
-  &-text {
-    color: $font-color-light;
-    font-size: 32px;
+  .text-wrap {
+    position: absolute;
+    top: 50%; left: 5%;
+    width: 90%;
+    margin-top: -87.5px;
+    font-size: 25px;
     font-weight: 700;
-    margin-top: 70px;
-    padding: 0 20px;
+    height: 175px;
+  }
 
-    span {
-      font-size: 18px;
+  .wave {
+    color: #999;
+    animation: .5s color infinite;
+  }
 
-      &:before {
-        content: "\A";
-        white-space: pre;
-      }
+  @keyframes color {
+    50% {
+      color: $font-color-light;
     }
   }
+
+  // &-text {
+  //   color: $font-color-light;
+  //   font-size: 32px;
+  //   font-weight: 700;
+  //   margin-top: 70px;
+  //   padding: 0 20px;
+  //
+  //   span {
+  //     font-size: 18px;
+  //
+  //     &:before {
+  //       content: "\A";
+  //       white-space: pre;
+  //     }
+  //   }
+  // }
 
   .desktop-menu {
     display: none;
@@ -388,16 +409,24 @@ footer {
 }
 
 @media (min-width: $screen-medium) {
+  // .header {
+  //   &-text {
+  //     font-size: 40px;
+  //     margin-top: 120px;
+  //     padding: 0 20px;
+  //
+  //     span {
+  //       font-size: 30px;
+  //
+  //     }
+  //   }
+  // }
+
   .header {
-    &-text {
-      font-size: 40px;
-      margin-top: 120px;
-      padding: 0 20px;
-
-      span {
-        font-size: 30px;
-
-      }
+    .text-wrap {
+      top: 50%; left: 15%;
+      width: 70%;
+      font-size: 32px;
     }
   }
 
