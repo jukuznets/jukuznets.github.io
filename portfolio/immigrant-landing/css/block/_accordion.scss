@@ -1,0 +1,74 @@
+.schedule {
+  min-width: 360px;
+
+  &__content {
+    display: none;
+    margin-top: 10px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    position: relative;
+    background: $gradient_left;
+    border-radius: 35em;
+    padding: 4px 0 4px 10px;
+    cursor: pointer;
+    font-size: .8em;
+  }
+
+  &__title::before {
+    content: "";
+    display: inline-block;
+    border: solid #555;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: rotate(45deg);
+    transition: transform .2s linear;
+  }
+
+  &__content {
+    margin-left: 20px;
+  }
+}
+
+.expanded.schedule__title::before {
+  content: "";
+  border: solid #555;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  transform: rotate(-135deg);
+  transition: transform .2s linear;
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  .schedule__title {
+    padding: 4px 15px 4px 40px;
+    font-size: 1em;
+  }
+
+  .schedule__title::before {
+    top: 25px;
+    right: 50px;
+  }
+
+  .expanded.schedule__title::before {
+    top: 27px;
+    right: 50px;
+  }
+}
+
+@media (min-width: map-get($viewport_size, l)) {
+  .schedule__title {
+    font-size: 1.1em;
+  }
+}

@@ -1,0 +1,39 @@
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000;
+  padding: 30px 55px;
+  margin: auto;
+  height: auto;
+  border: 1px solid $color_shadow;
+  border-radius: 4px;
+  box-shadow: 3.6px 7.1px 14.7px 1.3px rgba(0, 0, 0, .05);
+
+  p {
+    user-select: none;
+  }
+
+  p span {
+    font-weight: 700;
+  }
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  .swiper-container {
+    width: 60%;
+  }
+
+  .swiper-slide {
+    height: 280px;
+  }
+}

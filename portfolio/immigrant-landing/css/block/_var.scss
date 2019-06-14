@@ -1,0 +1,18 @@
+$color_title: #585f69;
+$color_highlight: #f44336;
+$color_dark: #272727;
+$color_font: #333;
+$color_shadow: #ccc;
+
+$gradient_right: linear-gradient(to right, $color_shadow, #f5f5f5);
+$gradient_left: linear-gradient(to left, $color_shadow, #f5f5f5);
+
+$font_main: Arial,sans-serif;
+
+$border_radius: 4px;
+
+$viewport_size: (
+  s: 320px,
+  m: 768px,
+  l: 1200px
+);

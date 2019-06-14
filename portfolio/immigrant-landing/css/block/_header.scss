@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, .4),
+              rgba(0, 0, 0, .4) ),
+              url(../img/bgr-picture-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 6% 4% 20%;
+  color: #fff;
+  position: relative;
+
+  &__logo {
+    background: url(../img/logo_mobile.png) no-repeat;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__for-who {
+    margin: 30px 0 0 13%;
+  }
+
+  &__arrow {
+    display: block;
+    background: url(../img/down-arrow.png) no-repeat;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    animation: button-bottom 1s alternate ease-in-out infinite;
+  }
+}
+
+@keyframes button-bottom {
+  0% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+      transform: translateY(4px);
+  }
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  .header {
+    padding: 2% 2% 6%;
+    background: linear-gradient( rgba(0, 0, 0, .4),
+                rgba(0, 0, 0, .4) ),
+                url(../img/bgr-picture.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header__for-who {
+    margin: 30px 0 0 37%;
+  }
+}
+
+@media (min-width: map-get($viewport_size, l)) {
+  .header {
+    padding: 2% 4%;
+    height: 100vh;
+  }
+
+  .header__logo {
+    background: url(../img/logo.png) no-repeat;
+    width: 80px;
+    height: 80px;
+  }
+}

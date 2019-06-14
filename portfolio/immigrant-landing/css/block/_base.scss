@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+a { text-decoration: none; }
+
+body {
+  color: $color_font;
+  font-family: $font_main;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: $color_title;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  padding: .7em 0 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding-bottom: .5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  padding: .7em 0 .5em;
+  text-align: left;
+}
+
+p {
+  font-size: 14px;
+  padding-bottom: 1.2em;
+}
+
+.wrapper {
+  margin: 0 3%;
+  padding: 6% 0;
+}
+
+.caption {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+h1 + .caption,
+h2 + .caption {
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.gain,
+.refund {
+  background: $gradient_left;
+}
+
+.content__info {
+  text-align: center;
+
+  p {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+  }
+
+  span {
+    color: $color_highlight;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $color_title;
+  background-image: linear-gradient(to right, #ccc, $color_title, #ccc);
+  margin-bottom: 15px;
+}
+
+.refund {
+  text-align: center;
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .caption {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: map-get($viewport_size, l)) {
+  .wrapper {
+    margin: 0 auto;
+    padding: 4% 0;
+    max-width: 65%;
+  }
+
+  h1 {
+    font-size: 3.3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
